@@ -1,0 +1,27 @@
+### Songs index action
+GET http://localhost:3000/songs
+
+### Songs show action
+GET http://localhost:3000/songs/1
+
+### Songs create action
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+  "title": "test title",
+  "album": "test album",
+  "artist": "test artist",
+  "year": "test year"
+}
+
+### Songs update action
+PATCH http://localhost:3000/songs/1
+Content-Type: application/json
+
+{
+  "year": 1963
+}
+
+### Songs delete action
+DELETE http://localhost:3000/songs/11
