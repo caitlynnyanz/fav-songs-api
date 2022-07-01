@@ -22,4 +22,4 @@ end
 
 table = TTY::Table.new(["Title", "Artist", "Album", "Year"], rows)
 
-puts table.render(:ascii)
+puts table.render(:ascii, resize: true)
